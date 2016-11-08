@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+@font-face {
+    font-family: 'myriad';
+    src: url(../font/myriad-set-pro_bold.ttf) format('truetype');
+}
+
+html,body{
+	width: 100%;
+	min-height: 100%;
+	
+}
+
+header.container-fluid{
+	height: 100%;
+	height: 100vh;
+	background: url(../images/fondo-2.jpg)  no-repeat center  ;
+	background-size: cover;
+	
+	
+}
+
+.navbar-default{
+	background-color: transparent;
+	border: 0px;
+}
+.navbar ul.navbar-nav li> a{
+	text-transform: uppercase;
+	font-family: 'Oswald', 'open-sans';
+	color: white;
+	letter-spacing: 2px;
+	font-size: 15px;
+	font-weight: 300;
+}
+.nav{
+	margin-top: 20px;
+}
+header .titulo{
+	position: absolute;
+    top: 40%;
+ 
+    overflow: hidden;
+
+}
+.titulo h2{
+	color: white;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-family: 'myriad';
+	letter-spacing: 16px;
+	
+}
+section.skills{
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 46%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 0 90%);
+}
+
+section.about-me .container{
+	padding-top: 200px;
+	
+}
+section.about-me{
+	background:linear-gradient(to bottom, #00202f , #045b8a);
+}
+section.skills{
+	background-color: #045b8a;
+}
+section.about-me, section.skills{
+	width: 100%;
+	
+	min-height: 100vh;
+	padding: 40px 0px;
+}
+
+.about-me .titulo h2{
+	color: white;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-family: 'myriad';
+	letter-spacing: 16px;
+	padding-bottom: 50px;
+}
+
+.foto img{
+	width: 80%;
+	min-width: 200px;
+	max-width: 300px;
+	border-radius: 50%;
+	
+}
+.about-me .titulo{
+	margin-top: 100px;
+}
+
+.about-me p.texto{
+	color: white;
+	vertical-align: middle;
+	margin-top: 5%;
+	padding: 0px 20px;
+}
+.skills-elements{
+	margin-top: 150px;
+	height: 408px;
+	background-color: white;
+}
+.skills-elements:last-of-type{
+	margin-right: 0px;
+}
+
+@media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+}
+
+}
+}
